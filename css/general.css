@@ -1,0 +1,114 @@
+/*********************Reusable components ************************/
+/* .container {
+  margin: 0 auto;
+}
+.bg-img {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.transparent-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 33px 3px #ff30597e;
+  border-radius: 40px;
+} */
+/*Situational*/
+/*Relative parent*/
+/* .photo-overlay {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translateY(100%);
+} */
+/***********************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+body {
+  overflow-x: hidden;
+  scrollbar-color: #ffff;
+}
+::selection {
+  background-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness),
+    0.7
+  );
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+:root {
+  --heading-font-family: "Amatic SC", sans-serif;
+  --inter-font: "Inter", sans-serif;
+  --text-font-family: "Open Sans", sans-serif;
+  --section-bg-color: #eeeeee;
+  --text-color: #7c7c8c;
+  --text-hover-color: #212529;
+  --default-color: #212529;
+  --color-tertiary: #7f7f90;
+  --heading-text-color: #37373f;
+  --heading-p-color: #4f4f5a;
+  --contact-cards-color: #f5f5f5;
+  --primary-hue: 0;
+  --primary-saturation: 84%;
+  --primary-lightness: 44%;
+  --primary-color: hsl(0, 84%, 44%);
+  --btn-hover-color: hsl(0, 100%, 53%);
+  --secondary-hue: 0;
+  --secondary-saturation: 0%;
+  --secondary-lightness: 100%;
+  --secondary-color: hsl(0, 0%, 100%);
+  --links-text-size: 16px;
+  --on-focus-color: #000;
+}
+.dark {
+  --section-bg-color: #252525;
+  --heading-text-color: #ffffff;
+  --heading-p-color: #838386;
+  --primary-color: hsl(35, 72%, 44%);
+  --secondary-color: #202020;
+  --text-hover-color: #ffffff;
+  --default-color: #ffffff;
+  --on-focus-color: #e2e2e2;
+  --btn-hover-color: hsl(35, 77%, 54%);
+  --contact-cards-color: #0c0b0b;
+  transition: all 0.5s;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(255, 255, 255);
+  border-left: 2px solid rgb(238, 238, 238);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 21px 0px inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(238, 238, 238, 0.55) 0px 0px 10px 0px inset;
+  border-radius: 100vh;
+}
