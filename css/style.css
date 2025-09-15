@@ -600,13 +600,13 @@ textarea {
   border: 1px solid var(--primary-color);
   border-radius: 18px;
   color: #ffff;
+  cursor: pointer;
 }
 /***************footer-section********************/
 .footer-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../imgs/textured-metal.jpeg.jpeg);
   background-size: contain;
-  margin-bottom: 18px;
 }
 .footer-container {
   padding: 40px 15px;
